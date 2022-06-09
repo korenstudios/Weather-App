@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  font-family: Tahoma;
+  justify-content: center;
+}
+
+div.wapp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  font-family: "Open Sans";
+}
+div.search-wheather {
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.search-wheather .city-field {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+div.search-wheather small {
+  display: block;
+  margin: 15px;
+  text-align: justify;
+  color: maroon;
+  font-weight: bold;
+}
+
+div.search-wheather .search-btn {
+  padding: 5px;
+  font-size: 1.2em;
+  margin-left: 5px;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: transparent;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+div.search-wheather .search-btn:hover {
+  background-color: aquamarine;
+  transition: 1s all ease-in-out;
+}
+
+div.search-wheather .city-field:focus {
+  outline-color: steelblue;
+}
+
+div.wheather {
+  margin-top: 50px;
+}
+
+div.wheather-box {
+  width: 650px;
+  color: snow;
+  border: 5px solid gold;
+  border-radius: 25px;
+  padding: 15px 20px 35px;
+}
+
+div.wheather-box p.location {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+div.current-wheather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  margin-left: 50px;
+}
+
+div.current-wheather .temp span:first-child {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+}
+
+div.current-wheather .icon-text span {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+div.current-wheather .icon-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.current-wheather .condition span {
+  display: block;
+  line-height: 1.5;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+.forecast .day2 span {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.forecast .day2 span + img {
+  display: block;
+  margin: 0 auto;
+}
+
+.forecast .day3 span {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.forecast .day3 span + img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.wapp-container aside {
+  margin-top: 15px;
+  color: darkgray;
+}
+
+div.wapp-container aside a:first-child {
+  color: darkred;
+}
+
+div.wapp-container aside a:last-child {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+@media (max-width: 575.98px) {
+  div.wheather-box {
+    width: 100vw;
+  }
+
+  div.wheather-box p.location {
+    font-size: 1em;
+  }
+
+  div.current-wheather .icon-text img {
+    position: relative;
+    right: 40px;
+  }
+
+  div.current-wheather .icon-text span {
+    position: relative;
+    right: 40px;
+    font-size: 0.65em;
+  }
+
+  div.current-wheather .icon-text + span {
+    position: relative;
+    display: inline-block;
+    font-size: 6.5em;
+    right: 25px;
+  }
+
+  div.search-wheather {
+    margin-top: 35px;
+  }
+
+  div.current-wheather .condition span {
+    font-size: 0.65em;
+  }
+
+  .forecast span {
+    font-size: 0.65em;
+    margin-top: 20px;
+  }
+
+  div.current-wheather .temp span:first-child {
+    position: relative;
+    right: 25px;
+    font-size: 1em;
+  }
+
+  div.current-wheather .temp .feels {
+    position: relative;
+    right: 25px;
+    font-size: 0.45em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 325.98px) {
+  div.search-wheather small {
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 281.98px) {
+  div.current-wheather .condition span {
+    font-size: 0.45em !important;
+  }
+}
